@@ -22,7 +22,7 @@ const LogoImage = ({ color }) => {
 
   const logo = useSelector((state) => state.session.server.attributes?.logo);
   const logoInverted = useSelector((state) => state.session.server.attributes?.logoInverted);
-
+   console.log(logo)
   if (logo) {
     if (expanded && logoInverted) {
       return <img className={classes.image} src={logoInverted} alt="" />;
